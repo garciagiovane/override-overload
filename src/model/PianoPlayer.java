@@ -1,8 +1,10 @@
 package model;
 
+import javax.swing.JOptionPane;
+
 public class PianoPlayer extends Musician {
 
 	public void plays() {
-		System.out.println("This one plays piano.");
+		JOptionPane.showMessageDialog(null, "This one plays piano.", "Resultado", JOptionPane.INFORMATION_MESSAGE);
 	}
 }

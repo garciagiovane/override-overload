@@ -1,0 +1,87 @@
+i.e. = id est "that is"
+e.g. = exempli gratia "for the sake of example"
+
+
+Methods:
+	Definition of methods:
+		Pieces/Sets of code that can be reffered by a name and have the possibility
+		of being invoked (this happening through calling the method's name) at any 
+		part of a program.
+
+		Each method has its own name.
+
+		After finishing the execution of a invoked method, the program returns to
+		the exact area (line) where it were invoked, continuing at the next line
+
+	Main types of methods:
+		Built-in:
+			Methods that belong to a compiler package, like System.out.println().
+
+		User-defined:
+			Methods defined by the developer, with personalized names and tasks. 
+			like:
+			
+			public void delay(x){
+				for(c=0;c<=x;c++){
+					System.out.println(".");
+					Thread.sleep(1000);
+				}
+			}
+
+# Method signatures:
+#	They are part of the methods declaration
+#	combining the method's name and its
+#	parameter list.
+
+
+Override:
+	Polymorphism can be apllied (search)
+
+	Definition: 
+	Occurs when having two methods with the same name and parameters(i.e., method signature).
+	But one is in the parent class and the other in the child class. With this, the child can
+	give to itself a specific implementation of a method provided by the parent.
+
+	class Musician{
+		public void plays(){
+		System.out.println("A musician plays something...");
+		}
+	} 
+
+	class BassPlayer extends Musician{
+		public void plays(){
+		System.out.println("This one plays bass.");
+		}
+	}
+
+	class PianoPlayer extends Musician{
+		public void plays(){
+		System.out.println("This one plays piano.");
+		}
+	}
+
+
+
+Overload:
+	Occurs when having two or more methods in a class,
+	owning the same name but with different parameters.
+	A nice example would be the Constructor type of methods.
+
+	class Dog{
+	Dog(){
+		System.out.println("You've casted a dog.");
+	}
+
+	Dog(String name){
+		System.out.println("You've casted "+name+", the nicest dog on earth.");
+	}
+
+	}
+
+Main difference:
+	
+	Override refers to same methods with same name and parameters.
+	But having a specific implementation in the child class.
+
+	Overload refers to having two or more methods in the same class,
+	with the same name but different parameters.
